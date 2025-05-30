@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         // Setup
         Sword playerSword = new Sword();
-        Player hero = new Player("Vincent", 100, 15, 10, 3, playerSword);
+        Player hero = new Player("Player", 100, 15, 10, 3, playerSword);
         Enemy goblin = new Enemy("Goblin", 80, 10, 8, 2);
 
         System.out.println("\n=== PLAYER STATUS ===");
