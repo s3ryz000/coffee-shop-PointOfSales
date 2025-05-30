@@ -1,22 +1,23 @@
-public class Weapon{
-	private String name;
-	private int attackPts;
+public class Weapon {
+    protected String name;
+    protected int weaponDmg;
 
-	Weapon(String name, int attackPts){
-		this.name = name;
-		this.attackPts = attackPts;
-	}
+    public Weapon(String name, int weaponDmg) {
+        this.name = name;
+        this.weaponDmg = weaponDmg;
+        System.out.println("[LOG] Weapon constructor called for: " + name);
+    }
 
-	public String getName(){
-		return name;
-	}
-	public int getAttackPts(){
-		return attackPts;
-	}
+    public String getName() {
+        return name;
+    }
 
-	@Override
-	public String toString(){
-		return "Weapon: " + name +
-				" | AttackPts: " + attackPts;
-	}
+    public int getWeaponDmg() {
+        return weaponDmg;
+    }
+
+    @Override
+    public String toString() {
+        return "Weapon: " + name + " | Damage: " + weaponDmg;
+    }
 }
